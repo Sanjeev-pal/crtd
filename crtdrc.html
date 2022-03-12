@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="http://crtdrc.com/public/frontend/new/style.css"> -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">    <link rel="stylesheet" href="style.css">
     <title>CRTD Research Center</title>
     <link rel="stylesheet" href="/responsive/responsive.css">
     <style>
@@ -32,8 +32,10 @@
     <div class="banner">
         <header>
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><p>CRTD RESEARCH CENTER </p>                  <p style="font-size: 16px; ">Clear Evidence,Better Decisions,More Learning</p>
+                <a class="navbar-brand" href="#"><p style="font-size: 25px;">CRTD RESEARCH CENTER </p>
+                    <p style="font-size: 13px; ">Clear Evidence,Better Decisions,More Learning</p>
                 </a>
+
                 
                 
                 <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
@@ -89,6 +91,8 @@
             </div>
         </div>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="bi bi-arrow-up-circle-fill"></i></button>
+   
     <section class="py-5 text-center about_us">
         <h2 class="py-4 font-weight-bold">About Us</h2>
         <p style="text-align: justify;">Center Research Technology Development abbreviated as CRTD RESEARCH CENTER aims to provide
@@ -304,6 +308,28 @@
                 </center>
             </div>
         </div>
+        
+         <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
     </footer>
 
     <script src="http://crtdrc.com/public/frontend/new/js/homePage.js"></script>
@@ -316,6 +342,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+       
+        
 </body>
 
 </html>

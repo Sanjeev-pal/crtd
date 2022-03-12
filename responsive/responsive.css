@@ -1,8 +1,17 @@
 @media only screen and (max-width: 576px){
 .navbar-brand{
-width: 25%;
+/* width: 25%; */
 font-size: 1rem;
+margin-left: 0rem;
 }
-
-
+.navbar-brand p{
+font-size: 5px;
+} 
+.navbar-toggler-icon {
+    margin-top: -100px;
+    margin-right: -20px;
+}
+.features_card.is-visible {
+    height: 330px;
+}
 }
