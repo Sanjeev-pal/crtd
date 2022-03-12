@@ -5,6 +5,9 @@ body {
 }
 
 
+html{
+    scroll-behavior: smooth;
+}
 
 .header_content {
     font-family: sans-serif;
@@ -61,6 +64,12 @@ body {
     padding-left: 1rem;
     color: #feab29;
     width: 50%;
+}
+.navbar-brand p{
+    font-size: 40px;
+}
+.navbar-brand h6{
+    font-size: 20px;
 }
 .about_us {
     margin: auto;
@@ -308,6 +317,7 @@ body {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    scroll-behavior: smooth;
   
   }
 footer {
